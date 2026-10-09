@@ -19,7 +19,7 @@ Esto aplica a todos los repos de `agavesystems`, salvo que el repo diga otra cos
 ## Pull requests
 
 - Todo cambio entra por PR. En repos de cliente con despliegue continuo, nunca push a `main`.
-- El PR sigue la plantilla: qué y por qué, `Cierra #n`, cómo se probó y la revisión de seguridad.
+- El PR sigue la plantilla: qué y por qué, `Closes #n`, cómo se probó y la revisión de seguridad. La palabra clave va en inglés porque GitHub no reconoce "Cierra". Si el PR solo avanza el issue, `Avanza #n`.
 - El CI de la casa tiene que pasar. Las acciones de GitHub se fijan a un SHA completo.
 - Quien abre el PR no lo fusiona sin una revisión, salvo en un repo donde trabaja solo.
 

@@ -8,7 +8,8 @@ Sin trailers de atribución ni "generado por".
 
 <!-- Qué cambia y qué problema resuelve. Dos o tres frases. -->
 
-Cierra #
+<!-- La palabra clave va en inglés: GitHub no cierra el issue con "Cierra". Si el PR solo avanza el issue, escribe "Avanza #n". -->
+Closes #
 
 ## Tipo
 
