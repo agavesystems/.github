@@ -1,0 +1,50 @@
+name: Pendiente
+description: Algo que hay que hacer, con dueño y condición de terminado.
+labels: ["tipo:tarea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Un pendiente se gana su lugar si pasa las cuatro:
+        1. **Acción:** un verbo concreto y una condición de terminado.
+        2. **Dueño posible:** alguien podría tomarlo este mes.
+        3. **Verificado:** comprobado contra el código o el sistema vivo, no una sospecha.
+        4. **No cabe en una línea:** si todo su valor es "ojo con esto", va a `docs/`, no aquí.
+  - type: textarea
+    id: que-pasa
+    attributes:
+      label: Qué pasa
+      description: El estado actual y por qué importa.
+    validations:
+      required: true
+  - type: textarea
+    id: verificacion
+    attributes:
+      label: Cómo se verificó
+      description: Comando, consulta, archivo o captura que lo comprueba.
+    validations:
+      required: true
+  - type: textarea
+    id: que-hacer
+    attributes:
+      label: Qué hay que hacer
+    validations:
+      required: true
+  - type: textarea
+    id: terminado
+    attributes:
+      label: Terminado cuando
+      description: Una condición que alguien más pueda comprobar.
+    validations:
+      required: true
+  - type: dropdown
+    id: prioridad
+    attributes:
+      label: Prioridad sugerida
+      description: En la clasificación se pone la etiqueta p1, p2 o p3.
+      options:
+        - "p1: rompe producción, dinero o seguridad"
+        - "p2: hay que hacerlo este mes"
+        - "p3: cuando haya hueco"
+    validations:
+      required: true

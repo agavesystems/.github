@@ -1,0 +1,44 @@
+name: Entrega
+description: Algo que sale al cliente y que el cliente acepta. Sigue el estándar de proyecto de cliente.
+labels: ["tipo:entrega"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        La entrega se cierra cuando el cliente acepta y la evidencia (correo, captura o PDF firmado) está en `docs/entregables/<hito>/aceptacion.*`.
+        El título va como "Entrega: qué (hito)". Asigna el milestone del hito.
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué se entrega
+    validations:
+      required: true
+  - type: input
+    id: donde
+    attributes:
+      label: Dónde está
+      placeholder: "docs/entregables/2026-10-lab/"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión
+      description: El tag y release que la acompaña.
+      placeholder: "v0.4"
+    validations:
+      required: true
+  - type: input
+    id: fecha
+    attributes:
+      label: Fecha de entrega
+      placeholder: "2026-10-08"
+    validations:
+      required: true
+  - type: textarea
+    id: aceptacion
+    attributes:
+      label: Cómo se acepta
+      description: Qué tiene que confirmar el cliente, y por qué medio.
+    validations:
+      required: true

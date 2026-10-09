@@ -1,0 +1,44 @@
+name: Incidente
+description: Pasó algo en producción.
+labels: ["tipo:incidente"]
+body:
+  - type: markdown
+    attributes:
+      value: Hechos, no hipótesis. Lo que no se comprobó se marca como tal.
+  - type: textarea
+    id: que-paso
+    attributes:
+      label: Qué pasó y cuándo
+    validations:
+      required: true
+  - type: textarea
+    id: afectados
+    attributes:
+      label: A quién afectó
+    validations:
+      required: true
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidencia
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: contencion
+    attributes:
+      label: Qué se hizo para contenerlo
+  - type: textarea
+    id: que-falta
+    attributes:
+      label: Qué falta para que no vuelva
+  - type: dropdown
+    id: prioridad
+    attributes:
+      label: Prioridad sugerida
+      options:
+        - "p1: rompe producción, dinero o seguridad"
+        - "p2: hay que hacerlo este mes"
+        - "p3: cuando haya hueco"
+    validations:
+      required: true

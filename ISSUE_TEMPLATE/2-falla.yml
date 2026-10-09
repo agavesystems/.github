@@ -1,0 +1,59 @@
+name: Falla
+description: Algo que funcionaba y dejó de funcionar.
+labels: ["tipo:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Si es un problema de seguridad (credencial expuesta, acceso indebido), no lo reportes aquí. Sigue SECURITY.md.
+  - type: textarea
+    id: que-falla
+    attributes:
+      label: Qué falla
+      description: Lo que se ve, en una o dos frases.
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Cómo reproducirlo
+      placeholder: |
+        1. Entrar a ...
+        2. Mandar ...
+        3. Aparece ...
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Qué se esperaba
+    validations:
+      required: true
+  - type: input
+    id: donde
+    attributes:
+      label: Dónde
+      description: Ambiente y versión (lab, producción, tag o commit).
+      placeholder: "producción, v1.2"
+    validations:
+      required: true
+  - type: input
+    id: desde
+    attributes:
+      label: Desde cuándo
+      placeholder: "2026-10-08 por la tarde"
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidencia
+      description: Logs, capturas o el id de la ejecución. Sin teléfonos, correos ni datos personales del cliente.
+      render: shell
+  - type: dropdown
+    id: prioridad
+    attributes:
+      label: Prioridad sugerida
+      options:
+        - "p1: rompe producción, dinero o seguridad"
+        - "p2: hay que hacerlo este mes"
+        - "p3: cuando haya hueco"
+    validations:
+      required: true

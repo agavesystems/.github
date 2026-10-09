@@ -1,0 +1,56 @@
+name: Solicitud de cliente
+description: Algo que pidió un cliente o un socio, por WhatsApp, correo o en una junta.
+labels: ["ambito:cliente"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Aquí entra lo que llega por fuera. Describe el problema que tiene el cliente, no solo lo que pidió: "estaría bien" no es un caso de uso.
+        Si el pedido cabe en algo que ya está abierto, coméntalo ahí en vez de abrir otro.
+  - type: input
+    id: quien
+    attributes:
+      label: Quién lo pidió
+      description: Nombre y empresa. Sin teléfono ni correo.
+    validations:
+      required: true
+  - type: dropdown
+    id: origen
+    attributes:
+      label: Por dónde llegó
+      options: ["WhatsApp", "Correo", "Junta", "Otro"]
+    validations:
+      required: true
+  - type: input
+    id: fecha
+    attributes:
+      label: Cuándo llegó
+      placeholder: "2026-10-08"
+    validations:
+      required: true
+  - type: textarea
+    id: pedido
+    attributes:
+      label: Qué pidió
+      description: Lo más cercano posible a sus palabras.
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qué problema le resuelve
+    validations:
+      required: true
+  - type: dropdown
+    id: alcance
+    attributes:
+      label: ¿Está dentro de lo que se vendió?
+      description: Revisa "Qué queda dentro" y "Qué queda fuera" en docs/compromiso.md.
+      options: ["Sí, está dentro", "No, es alcance nuevo", "No sé"]
+    validations:
+      required: true
+  - type: input
+    id: compromiso
+    attributes:
+      label: Fecha que se le prometió
+      description: Si se le prometió una. Si no, déjalo vacío.

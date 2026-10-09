@@ -1,0 +1,29 @@
+name: Decisión
+description: Hay que decidir algo. El resultado se escribe en un ADR.
+labels: ["tipo:decision"]
+body:
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué hay que decidir
+    validations:
+      required: true
+  - type: textarea
+    id: por-que
+    attributes:
+      label: Por qué ahora
+    validations:
+      required: true
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas, con lo que cuesta cada una
+    validations:
+      required: true
+  - type: textarea
+    id: desbloquea
+    attributes:
+      label: Qué la desbloquea
+  - type: markdown
+    attributes:
+      value: "**Terminado cuando** el ADR está en `docs/decisions/` y este issue lo enlaza."

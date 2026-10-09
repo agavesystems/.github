@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Tablero de la operación
+    url: https://github.com/orgs/agavesystems/projects/3
+    about: Antes de abrir algo, revisa si ya está en el tablero Jarabe de Agave.
+  - name: Cómo trabajamos
+    url: https://github.com/agavesystems/.github/blob/main/CONTRIBUTING.md
+    about: De dónde sale un issue, cómo se nombra una rama y qué lleva un PR.
+  - name: Reportar un problema de seguridad
+    url: https://github.com/agavesystems/.github/blob/main/SECURITY.md
+    about: Una credencial expuesta o un hueco no se reporta en un issue. Sigue este canal.
