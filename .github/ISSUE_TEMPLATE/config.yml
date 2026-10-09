@@ -3,6 +3,9 @@ contact_links:
   - name: Tablero de la operación
     url: https://github.com/orgs/agavesystems/projects/3
     about: Antes de abrir algo, revisa si ya está en el tablero Jarabe de Agave.
+  - name: Preguntas, ideas y decisiones
+    url: https://github.com/agavesystems/jarabe-de-agave/discussions
+    about: Lo que todavía no es una tarea va a Discussions. Cuando madura, se convierte en issue.
   - name: Cómo trabajamos
     url: https://github.com/agavesystems/.github/blob/main/CONTRIBUTING.md
     about: De dónde sale un issue, cómo se nombra una rama y qué lleva un PR.
