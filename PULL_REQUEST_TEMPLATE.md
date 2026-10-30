@@ -37,8 +37,8 @@ Closes #
 
 <!-- Solo si este PR es parte de una entrega al cliente. -->
 
-- Issue de entrega: #
-- Versión que sale con esto:
+- Milestone del hito:
+- Release que sale con esto:
 
 ## Para quien revisa
 
